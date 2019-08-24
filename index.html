@@ -1,81 +1,94 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>spencer hewitt</title>
-        <meta name="author" content="Spencer Hewitt">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
-        <style>
+
+<head>
+    <title>spencer hewitt</title>
+    <meta name="author" content="Spencer Hewitt">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
+    <style>
         * {
-            margin:0px;
-            padding:0px;
+            margin: 0px;
+            padding: 0px;
             font-family: 'Roboto Mono', sans-serif;
         }
 
         .background {
-            position:fixed;
-            width:100%;
-            height:100%;
-            background-color:black;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: black;
         }
+
         #browser-too-small {
-		    position: fixed; margin: auto;
-		    top: 0;
+            position: fixed;
+            margin: auto;
+            top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-		    background-color: #1d1f21;
-		    z-index: 9999;
-		    width: 100%; height: 100%;
-		    text-align: center;
-		    color: #fff;
-		    display: none;
-		}
-
-		@media (max-width: 620px) {
-			#browser-too-small { display: block; }
-		}
-        @media (max-height: 500px){
-            #browser-too-small { display: block; }
+            background-color: #1d1f21;
+            z-index: 9999;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            display: none;
         }
+
+        @media (max-width: 620px) {
+            #browser-too-small {
+                display: block;
+            }
+        }
+
+        @media (max-height: 500px) {
+            #browser-too-small {
+                display: block;
+            }
+        }
+
         .center {
-		    top:50%;
-            left:50%;
-			text-align: center;
-            position:fixed;
-            transform:translate(-50%,-50%);
-		}
-        #bgimage {
-            opacity:0.35;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            position: fixed;
+            transform: translate(-50%, -50%);
         }
-        a {
-            text-decoration:none;
-            color:white;
-        }
-        .navbar {
-            position:fixed;
 
-            top:60%;
-            left:10%;
-            width:25%;
-            height:35%;
+        #bgimage {
+            opacity: 0.35;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+
+            top: 60%;
+            left: 10%;
+            width: 25%;
+            height: 35%;
             margin: 0 auto;
             display: flex;
             justify-content: left;
-            
+
         }
+
         .links {
-            position:relative;
-            top:30%;
-            left:5%;
-            font-size:1.8em;
-            overflow:hidden;
+            position: relative;
+            top: 30%;
+            left: 5%;
+            font-size: 1.8em;
+            overflow: hidden;
         }
-        
-        </style>
-	</head>
-	<body>
-        <!--
+    </style>
+</head>
+
+<body>
+    <!--
             TODO:
             decide where to put navbar [ ]
             navbar links               [ ]
@@ -85,33 +98,38 @@
             box popup in the middle    [ ]
             brainstorm!!!              [ ]
         -->
-        <div id="browser-too-small">
-                <div class="center"><div><p style="opacity:0.5;">Your browser width/height<br>is too small.</p></div></div>
+    <div id="browser-too-small">
+        <div class="center">
+            <div>
+                <p style="opacity:0.5;">Your browser width/height<br>is too small.</p>
+            </div>
         </div>
-        <div class="enterscreen">
+    </div>
+    <div class="enterscreen">
 
-        </div>
+    </div>
 
-        <div class="main">
-		    <div class="background">
-                <!-- 
+    <div class="main">
+        <div class="background">
+            <!-- 
                     gif credits to http://1041uuu.tumblr.com
                     found in this gallery - https://imgur.com/gallery/0Slze
                 -->
-                <img src="../portfolio/media/9WgJg0G.gif" id="bgimage">              
-            </div>
+            <img src="../portfolio/media/9WgJg0G.gif" id="bgimage">
+        </div>
 
-            <div class="navbar">
-                <div class="links">
-                    <a href="#">about</a>
-                    <br/>
-                    <a href="#">projects</a>
-                    <br/>
-                    <a href="#">contact</a>
-                    <br/>
-                    <a href="#">idk yet</a>
-                </div>
+        <div class="navbar">
+            <div class="links">
+                <a href="#">about</a>
+                <br />
+                <a href="#">projects</a>
+                <br />
+                <a href="#">contact</a>
+                <br />
+                <a href="#">idk yet</a>
             </div>
         </div>
-	</body>
+    </div>
+</body>
+
 </html>
