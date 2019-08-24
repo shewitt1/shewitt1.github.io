@@ -9,6 +9,7 @@
         * {
             margin:0px;
             padding:0px;
+            font-family: 'Roboto Mono', monospace;
         }
 
         .background {
@@ -17,6 +18,30 @@
             height:100%;
             background-color:black;
         }
+        #browser-too-small {
+		    position: fixed; margin: auto;
+		    top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+		    background-color: #1d1f21;
+		    z-index: 9999;
+		    width: 100%; height: 100%;
+		    text-align: center;
+		    color: #fff;
+		    display: none;
+		}
+
+		@media (max-width: 620px) {
+			#browser-too-small { display: block; }
+		}
+        .center {
+		    top:50%;
+            left:50%;
+			text-align: center;
+            position:fixed;
+            transform:translate(-50%,-50%);
+		}
         #bgimage {
             opacity:0.35;
         }
@@ -29,8 +54,11 @@
             border:3px solid black;
             top:60%;
             left:10%;
-            width:15%;
+            width:25%;
             height:35%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: left;
             
         }
         .links {
@@ -38,12 +66,15 @@
             top:5%;
             left:5%;
             font-size:1.8em;
-            font-family: 'Roboto Mono', monospace;
+            overflow:hidden;
         }
         
         </style>
 	</head>
 	<body>
+        <div id="browser-too-small">
+                <div class="center"><div><p>Your browser width<br>is too small.</p></div></div>
+        </div>
         <div class="enterscreen">
 
         </div>
