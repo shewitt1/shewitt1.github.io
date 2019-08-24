@@ -4,12 +4,12 @@
 	<head>
 		<title>spencer hewitt</title>
         <meta name="author" content="Spencer Hewitt">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
         <style>
         * {
             margin:0px;
             padding:0px;
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Mono', sans-serif;
         }
 
         .background {
@@ -35,6 +35,9 @@
 		@media (max-width: 620px) {
 			#browser-too-small { display: block; }
 		}
+        @media (max-height: 500px){
+            #browser-too-small { display: block; }
+        }
         .center {
 		    top:50%;
             left:50%;
@@ -51,7 +54,7 @@
         }
         .navbar {
             position:fixed;
-            border:3px solid black;
+
             top:60%;
             left:10%;
             width:25%;
@@ -63,7 +66,7 @@
         }
         .links {
             position:relative;
-            top:5%;
+            top:30%;
             left:5%;
             font-size:1.8em;
             overflow:hidden;
@@ -72,8 +75,18 @@
         </style>
 	</head>
 	<body>
+        <!--
+            TODO:
+            decide where to put navbar [ ]
+            navbar links               [ ]
+            navbar animations          [ ]
+            icons below navbar         [ ]
+            rain sounds                [ ]
+            box popup in the middle    [ ]
+            brainstorm!!!              [ ]
+        -->
         <div id="browser-too-small">
-                <div class="center"><div><p>Your browser width<br>is too small.</p></div></div>
+                <div class="center"><div><p style="opacity:0.5;">Your browser width/height<br>is too small.</p></div></div>
         </div>
         <div class="enterscreen">
 
@@ -90,8 +103,13 @@
 
             <div class="navbar">
                 <div class="links">
-                    <a href="#">about me</a>
-                    <a href="#"></a>
+                    <a href="#">about</a>
+                    <br/>
+                    <a href="#">projects</a>
+                    <br/>
+                    <a href="#">contact</a>
+                    <br/>
+                    <a href="#">idk yet</a>
                 </div>
             </div>
         </div>
