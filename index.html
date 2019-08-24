@@ -5,11 +5,12 @@
     <title>spencer hewitt</title>
     <meta name="author" content="Spencer Hewitt">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0px;
             padding: 0px;
-            font-family: 'Roboto Mono', sans-serif;
+            font-family: 'VT323', monospace;
         }
 
         .background {
@@ -64,25 +65,13 @@
             color: white;
         }
 
-        .navbar {
-            position: fixed;
-
-            top: 60%;
-            left: 10%;
-            width: 25%;
-            height: 35%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: left;
-
-        }
-
         .links {
-            position: relative;
-            top: 30%;
-            left: 5%;
-            font-size: 1.8em;
-            overflow: hidden;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            position: fixed;
+            font-size: 35px;
+            text-align:center;
         }
     </style>
 </head>
@@ -90,7 +79,7 @@
 <body>
     <!--
             TODO:
-            decide where to put navbar [ ]
+            decide where to put navbar [x]
             navbar links               [ ]
             navbar animations          [ ]
             icons below navbar         [ ]
@@ -125,8 +114,6 @@
                 <a href="#">projects</a>
                 <br />
                 <a href="#">contact</a>
-                <br />
-                <a href="#">idk yet</a>
             </div>
         </div>
     </div>
