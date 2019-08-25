@@ -10,7 +10,7 @@
         * {
             margin: 0px;
             padding: 0px;
-            font-family: 'VT323', monospace;
+            font-family: 'Roboto Mono', monospace;
         }
 
         .background {
@@ -57,7 +57,7 @@
         }
 
         #bgimage {
-            opacity: 0.35;
+            opacity: 0.3;
         }
 
         a {
@@ -72,7 +72,20 @@
             position: fixed;
             font-size: 35px;
             text-align:center;
+            display:flex;
+
         }
+        #navbarLink, #spacer{
+            line-height: 28px;
+            transition: all 0.2s;
+        }
+
+        #navbarLink:hover{
+            padding-top:12px;
+            
+        }
+
+        
     </style>
 </head>
 
@@ -85,6 +98,7 @@
             icons below navbar         [ ]
             rain sounds                [ ]
             box popup in the middle    [ ]
+            box popup pixel art program[ ]
             brainstorm!!!              [ ]
         -->
     <div id="browser-too-small">
@@ -109,11 +123,13 @@
 
         <div class="navbar">
             <div class="links">
-                <a href="#">about</a>
+                <a href="#" id="navbarLink">about</a>
                 <br />
-                <a href="#">projects</a>
+                <p style="color:white;" id="spacer">|</p>
+                <a href="#" id="navbarLink">projects</a>
                 <br />
-                <a href="#">contact</a>
+                <p style="color:white;" id="spacer">|</p>
+                <a href="#" id="navbarLink">contact</a>
             </div>
         </div>
     </div>
