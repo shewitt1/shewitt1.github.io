@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>spencer hewitt</title>
     <meta name="author" content="Spencer Hewitt">
@@ -60,9 +59,10 @@
             opacity: 0.3;
         }
 
-        a {
+        .navbar a {
             text-decoration: none;
             color: white;
+            opacity:0.7;
         }
 
         .links {
@@ -94,6 +94,7 @@
         .navicons img{
             width:35px;
             height:35px;
+            opacity:0.7;
         }
         .popup{
             position:fixed;
@@ -107,6 +108,7 @@
             height:550px;
             background-color:rgb(132,189,179);
             opacity:0.85;
+            display:none;
         }
         .popupnavbar{
             position:fixed;
@@ -119,6 +121,14 @@
             background-color:rgb(132,189,179);
             opacity:1;
         }
+        .popupnavbar p {
+            position:fixed;
+            font-family: 'VT323', monospace;
+            font-size:25px;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+        }
         #navbarline{
             border:2px solid rgb(3,49,41);
             position:fixed;
@@ -129,13 +139,25 @@
 
         }
         #closebutton{
+            font-family: 'VT323', monospace;
             position:fixed;
             right:5px;
-            top:4px;
+            top:50%;
+            transform:translateY(-50%);
             color:rgb(27,26,31);
-            font-weight:bold;
+            font-size:25px;
         }
         
+
+        #about{
+            display:block;
+        }
+        #projects{
+            display:none;
+        }
+        #contact{
+            display:none;
+        }
     </style>
 </head>
 
@@ -193,6 +215,9 @@
         <div class="popup">
             <div class="popupnavbar">
                 <a href="#" id="closebutton">[x]</a>
+                <p id="about">about me</p>
+                <p id="projects">projects</p>
+                <p id="contact">contact</p>
                 <span id="navbarline"></span>
 
             </div>
