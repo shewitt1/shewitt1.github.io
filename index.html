@@ -67,8 +67,8 @@
 
         .links {
             top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
+            left:50.9%;
+            transform:translate(-50%,-50.9%);
             position: fixed;
             font-size: 35px;
             text-align:center;
@@ -84,17 +84,37 @@
             padding-top:12px;
             
         }
-
+        
+        .navicons{
+            position:absolute;
+            top:58%;
+            left:50%;
+            transform:translate(-50%,-58%);
+        }
+        .navicons img{
+            width:35px;
+            height:35px;
+        }
+        .popup{
+            position:fixed;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border:3px solid white;
+            width:50%;
+            height:50%;
+        }
         
     </style>
 </head>
 
 <body>
+    
     <!--
             TODO:
             decide where to put navbar [x]
             navbar links               [ ]
-            navbar animations          [ ]
+            navbar animations          [x]
             icons below navbar         [ ]
             rain sounds                [ ]
             box popup in the middle    [ ]
@@ -123,15 +143,26 @@
 
         <div class="navbar">
             <div class="links">
-                <a href="#" id="navbarLink">about</a>
+                <a href="#about" id="navbarLink">about</a>
                 <br />
                 <p style="color:white;" id="spacer">|</p>
-                <a href="#" id="navbarLink">projects</a>
+                <a href="#projects" id="navbarLink">projects</a>
                 <br />
                 <p style="color:white;" id="spacer">|</p>
-                <a href="#" id="navbarLink">contact</a>
+                <a href="#contact" id="navbarLink">contact</a>
             </div>
         </div>
+        <div class="navicons">
+            <img src="media/linkedin.svg">
+            <img src="media/github.svg">
+            <img src="media/twitter.svg">
+        </div>
+
+        <div class="popup">
+
+
+        </div>
+        
     </div>
 </body>
 
