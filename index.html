@@ -99,10 +99,41 @@
             position:fixed;
             top:50%;
             left:50%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             transform:translate(-50%,-50%);
-            border:3px solid white;
-            width:50%;
-            height:50%;
+            border:3px solid rgb(3,49,41);
+            width:1000px;
+            height:550px;
+            background-color:rgb(132,189,179);
+            opacity:0.85;
+        }
+        .popupnavbar{
+            position:fixed;
+            left:50%;
+            transform:translate(-50%);
+            width:1000px;
+            height:30px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color:rgb(132,189,179);
+            opacity:1;
+        }
+        #navbarline{
+            border:2px solid rgb(3,49,41);
+            position:fixed;
+            top:100%;
+            left:50%;
+            transform:translate(-50%);
+            width:1000px;
+
+        }
+        #closebutton{
+            position:fixed;
+            right:5px;
+            top:4px;
+            color:rgb(27,26,31);
+            font-weight:bold;
         }
         
     </style>
@@ -115,9 +146,10 @@
             decide where to put navbar [x]
             navbar links               [ ]
             navbar animations          [x]
-            icons below navbar         [ ]
+            icons below navbar         [x?]
             rain sounds                [ ]
-            box popup in the middle    [ ]
+            box popup in the middle    [x]
+            design box                 [x]
             box popup pixel art program[ ]
             brainstorm!!!              [ ]
         -->
@@ -159,6 +191,11 @@
         </div>
 
         <div class="popup">
+            <div class="popupnavbar">
+                <a href="#" id="closebutton">[x]</a>
+                <span id="navbarline"></span>
+
+            </div>
 
 
         </div>
