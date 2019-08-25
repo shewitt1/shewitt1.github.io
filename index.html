@@ -81,12 +81,11 @@
         }
 
         #navbarLink:hover{
-            padding-top:12px;
-            
+            padding-top:12px; 
         }
         
         .navicons{
-            position:absolute;
+            position:fixed;
             top:58%;
             left:50%;
             transform:translate(-50%,-58%);
@@ -95,6 +94,7 @@
             width:35px;
             height:35px;
             opacity:0.7;
+            transition: all 0.2s;
         }
         .popup{
             position:fixed;
@@ -165,15 +165,16 @@
     
     <!--
             TODO:
-            decide where to put navbar [x]
-            navbar links               [ ]
-            navbar animations          [x]
-            icons below navbar         [x?]
-            rain sounds                [ ]
-            box popup in the middle    [x]
-            design box                 [x]
-            box popup pixel art program[ ]
-            brainstorm!!!              [ ]
+            decide where to put navbar      [x]
+            navbar links done               [ ]
+            navbar animations               [x]
+            icons below navbar              [x?]
+            rain sounds                     [ ]
+            box popup in the middle         [x]
+            design box                      [x]
+            box popup pixel art program     [ ]
+            fix icon animations(scrapped)   [ ]
+            brainstorm!!!                   [ ]
         -->
     <div id="browser-too-small">
         <div class="center">
@@ -207,9 +208,9 @@
             </div>
         </div>
         <div class="navicons">
-            <img src="media/linkedin.svg">
-            <img src="media/github.svg">
-            <img src="media/twitter.svg">
+            <a href="../portfolio/pages/linkedin.html" id="icon"><img src="media/linkedin.svg"></a>
+            <a href="../portfolio/pages/github.html" id="icon"><img src="media/github.svg"></a>
+            <a href="../portfolio/pages/twitter.html" id="icon"><img src="media/twitter.svg"></a>
         </div>
 
         <div class="popup">
