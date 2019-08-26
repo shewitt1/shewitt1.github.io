@@ -143,6 +143,7 @@
     color:rgb(27,26,31);
     font-size:23px;
     text-decoration:none;
+    transition: all 0.2s;
 }
 
 
@@ -212,4 +213,8 @@
     font-family: 'VT323', monospace;
     overflow:auto;
     font-size:20px;
+}
+
+#closebutton:hover{
+    font-size:25px;
 }
