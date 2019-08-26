@@ -107,12 +107,10 @@
             position:fixed;
             top:50%;
             left:50%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
             transform:translate(-50%,-50%);
             border:3px solid rgb(3,49,41);
             width:1000px;
-            height:550px;
+            height:500px;
             background-color:rgb(132,189,179);
             opacity:0.85;
             display:none;
@@ -174,9 +172,55 @@
             transform: translate(-50%,-50%);
             width: 925px;
             height: 460px;
-            border:2px solid rgb(3,49,41);
             border-radius:13px;
             display:none;
+        }
+        .abouttext{
+            position:fixed;
+            margin:auto;
+            width:50%;
+            height:100%;
+        }
+        .abouttext p{
+            position:fixed;
+            margin:auto;
+            font-family: 'VT323', monospace;
+            overflow:auto;
+            font-size:24px;
+            padding-top:47px;
+            width:47%;
+            height:100%;
+            line-break:auto;
+            text-align:center;
+        }
+        .aboutmedia{
+            position:fixed;
+            margin:auto;
+            left:50%;
+            width:50%;
+            height:100%;
+        }
+        .aboutmedia img {
+            top:30%;
+            left:50%;
+            width:254px;
+            height:291px;
+            transform:translate(-50%,-30%);
+            position:absolute;
+            border-radius:4%;
+            opacity:1;
+
+        }
+        .aboutmedia p {
+            position:absolute;
+            top:73%;
+            left:50%;
+            transform:translate(-50%,-73%);
+            width:100%;
+            margin:48.5px;
+            font-family: 'VT323', monospace;
+            overflow:auto;
+            font-size:20px;
         }
     </style>
 </head>
@@ -243,9 +287,32 @@
             <p id="contact">contact</p>
             <span id="navbarline"></span>
         </div>
+
         <div class="aboutdesc">
-            this is where the about text will be
+            <div class="abouttext">
+                <p>
+                    hello! my name is spencer hewitt and i currently live
+                    in asheville, north carolina. i am studying computer
+                    science at the moment, with a concentration in infosec and cybersecurity.
+                    my main hobbies are playing video games, designing and 
+                    developing websites, and playing ctfs. currently, i am
+                    focusing on simplifying my code, and making better design 
+                    choices.
+
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    thank you for visiting my website!
+                </p>
+            </div>
+
+            <div class="aboutmedia">
+                <img src="media/myself.png">
+                <p>this is basically the only good picture i have</p>
+            </div>
         </div>
+
         <div class="projectsdesc">
             
         </div>
