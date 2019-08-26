@@ -5,6 +5,7 @@
     <meta name="author" content="Spencer Hewitt">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
     <style>
         * {
             margin: 0px;
@@ -59,6 +60,11 @@
             opacity: 0.3;
         }
 
+        .navbar{
+            display:block;
+            transition: all 0.5s;   
+        }
+
         .navbar a {
             text-decoration: none;
             color: white;
@@ -89,6 +95,7 @@
             top:58%;
             left:50%;
             transform:translate(-50%,-58%);
+            transition: all 0.5s;
         }
         .navicons img{
             width:35px;
@@ -130,7 +137,7 @@
             transform:translate(-50%,-50%);
         }
         #navbarline{
-            border:2px solid rgb(3,49,41);
+            border:1px solid rgb(3,49,41);
             position:fixed;
             top:100%;
             left:50%;
@@ -145,17 +152,30 @@
             top:50%;
             transform:translateY(-50%);
             color:rgb(27,26,31);
-            font-size:25px;
+            font-size:23px;
+            text-decoration:none;
         }
         
 
         #about{
-            display:block;
+            display:none;
         }
         #projects{
             display:none;
         }
         #contact{
+            display:none;
+        }
+
+        .aboutdesc {
+            position: fixed;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 925px;
+            height: 460px;
+            border:2px solid rgb(3,49,41);
+            border-radius:13px;
             display:none;
         }
     </style>
@@ -198,7 +218,7 @@
 
         <div class="navbar">
             <div class="links">
-                <a href="#about" id="navbarLink">about</a>
+                <a href="#about" onclick="openPopup();openAbout();" id="navbarLink">about</a>
                 <br />
                 <p style="color:white;" id="spacer">|</p>
                 <a href="#projects" id="navbarLink">projects</a>
@@ -207,25 +227,31 @@
                 <a href="#contact" id="navbarLink">contact</a>
             </div>
         </div>
+
         <div class="navicons">
             <a href="../portfolio/pages/linkedin.html" id="icon"><img src="media/linkedin.svg"></a>
             <a href="../portfolio/pages/github.html" id="icon"><img src="media/github.svg"></a>
             <a href="../portfolio/pages/twitter.html" id="icon"><img src="media/twitter.svg"></a>
+        </div>  
+    </div>
+
+    <div class="popup">
+        <div class="popupnavbar">
+            <a href="" onclick="closePopup();" id="closebutton">[x]</a>
+            <p id="about">about me</p>
+            <p id="projects">projects</p>
+            <p id="contact">contact</p>
+            <span id="navbarline"></span>
         </div>
-
-        <div class="popup">
-            <div class="popupnavbar">
-                <a href="#" id="closebutton">[x]</a>
-                <p id="about">about me</p>
-                <p id="projects">projects</p>
-                <p id="contact">contact</p>
-                <span id="navbarline"></span>
-
-            </div>
-
-
+        <div class="aboutdesc">
+            this is where the about text will be
         </div>
-        
+        <div class="projectsdesc">
+            
+        </div>
+        <div class="contactdesc">
+            
+        </div>
     </div>
 </body>
 
